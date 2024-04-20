@@ -1,0 +1,20 @@
+.fixed-page-name {
+  position: fixed;
+  top: 0;
+  left: 240px;
+  height: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 24px;
+  transition: left 225ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  h1 {
+    color: #2c86ff;
+  }
+  ol {
+    li,
+    p {
+      font-size: 10px;
+    }
+  }
+}

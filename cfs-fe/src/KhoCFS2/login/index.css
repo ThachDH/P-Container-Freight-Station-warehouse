@@ -1,0 +1,33 @@
+.login {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  position: fixed;
+}
+.login__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login__container h1 {
+  margin: 30px;
+  font-size: 40px;
+  font-weight: 600;
+}
+.login__container input,
+.login__container label,
+.login__container button {
+  font-size: 14px;
+}
+
+.chilr-bg {
+  background-color: #fff;
+  border-radius: 30px;
+  width: 35%;
+  padding-top: 40px;
+  margin: 55px auto;
+  position: absolute;
+}/*# sourceMappingURL=index.css.map */

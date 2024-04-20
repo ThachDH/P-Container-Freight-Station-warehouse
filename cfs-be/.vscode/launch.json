@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "name": "Launch Debug",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}\\dist\\index.js",
+      "envFile": "${workspaceFolder}\\dist\\.env",
+      "restart": true,
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+.header .MuiToolbar-root {
+  position: relative;
+  padding-left: 39px !important;
+  justify-content: right;
+}
+.header .MuiToolbar-root::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 8px;
+  background-color: white;
+}
+.header .MuiToolbar-root .MuiBox-root {
+  background-color: white;
+  padding-top: 0px;
+  height: 48px;
+}
+.header .MuiToolbar-root .MuiBox-root .MuiButtonBase-root {
+  margin: 0;
+}
+.header .MuiToolbar-root .MuiBox-root .MuiButtonBase-root svg {
+  font-size: 24px;
+  color: #1876d1;
+}
+.header .MuiToolbar-root .MuiBox-root .menu-button {
+  opacity: 0;
+  transition: all 225ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  max-width: 0;
+  padding: 0;
+}
+.header .MuiToolbar-root .MuiBox-root .menu-button.show {
+  opacity: 1;
+  max-width: 40px;
+  padding: 8px;
+}
+
+.headTitle {
+  font-weight: bolder solid;
+  margin-top: 11px;
+}
+
+.headTitle .head {
+  font-size: 14px;
+  display: block;
+  text-indent: 110px;
+  color: #7f7f7f;
+}
+
+.headTitle .title {
+  font-size: 15px;
+  text-align: center;
+  color: #007fff;
+  text-decoration: underline;
+}
+
+.headTitle .title:hover {
+  color: #006699;
+  cursor: default;
+}/*# sourceMappingURL=index.css.map */

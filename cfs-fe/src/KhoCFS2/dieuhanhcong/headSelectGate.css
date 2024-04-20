@@ -1,0 +1,7 @@
+.test__class {
+  transform: translateX(0%);
+  transition: all linear 0.7s;
+}
+.test__class.hide {
+  transform: translateX(-200%);
+}/*# sourceMappingURL=headSelectGate.css.map */

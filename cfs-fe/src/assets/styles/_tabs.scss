@@ -1,0 +1,20 @@
+@import "./_variables.scss";
+.MuiTabs-root {
+  .MuiTabs-scroller {
+    .MuiTabs-flexContainer {
+      .MuiButtonBase-root {
+        font-size: 14px;
+        text-transform: none;
+        padding-left: $padding-md;
+        padding-right: $padding-md;
+      }
+    }
+  }
+}
+.MuiTabPanel-root {
+  .main-container {
+    margin-left: -24px;
+    margin-right: -24px;
+    margin-top: -8px;
+  }
+}

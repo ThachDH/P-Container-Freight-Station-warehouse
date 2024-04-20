@@ -1,0 +1,132 @@
+@import "../../assets/styles/_variables.scss";
+@import "../../assets/styles/_forms.scss";
+@import "../../assets/styles/_table.scss";
+@import "../../assets/styles/_dialog.scss";
+@import "../../assets/styles/_tabs.scss";
+@import "../../assets/styles/_popover.scss";
+@import "../../assets/styles/_custom.scss";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c2c2c !important;
+  background-color: $primary-bg-color !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.menu {
+  .MuiPaper-root {
+    background-color: $primary-color ;
+    color: #DCDCDC;
+  }
+}
+
+.MuiToolbar-root {
+  min-height: 48px !important;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+}
+
+.MuiBox-root.css-0 {
+  padding: 10px 7px;
+}
+
+main {
+  overflow: auto;
+
+  .search-container {
+    padding: $padding-sm $padding-md;
+    background-color: $primary-bg-color;
+
+    form {
+      display: flex;
+      align-items: flex-start;
+
+      .MuiFormControl-root {
+        width: 150px;
+        min-width: 150px;
+        background-color: #ffffe0;
+
+        .MuiInputLabel-root {
+
+          &.Mui-focused,
+          &.MuiFormLabel-filled {
+            transform: translate(9px, -5px) scale(0.75);
+            background-color: #ffffe0;
+            padding: 0 8px;
+            border-radius: 4px;
+            line-height: 1.5;
+          }
+        }
+      }
+
+      .MuiButton-root {
+        white-space: nowrap;
+      }
+
+      label {
+        &.search-label {
+          width: 50px;
+          display: flex;
+          line-height: 30px;
+        }
+      }
+
+      .MuiCheckbox-root {
+        padding-left: 0;
+        padding-top: 6px;
+        padding-bottom: 6px;
+
+        &+.MuiFormControlLabel-label {
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+
+  .main-content {
+
+    .MuiTableContainer-root {}
+  }
+
+  &.menu-hidden {
+    .fixed-page-name {
+      padding-left: 0;
+      left: 72px;
+    }
+  }
+}
+
+.control-container {
+  padding: 8px $padding-md;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .control-left {
+    display: flex;
+    align-items: center;
+  }
+
+  .control-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    button {
+      margin-left: 8px;
+    }
+  }
+}

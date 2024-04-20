@@ -1,0 +1,103 @@
+@import "./_variables.scss";
+
+main,
+.MuiDialogContent-root {
+  .MuiFormControl-root {
+    //width: 150px;
+    //min-width: 200px;
+    background-color: white;
+    border-radius: 4px;
+
+    &.read-only {
+      background-color: #f5f5f5;
+
+      .MuiOutlinedInput-root {
+        &.Mui-focused {
+          .MuiOutlinedInput-notchedOutline {
+            border-color: rgba(0, 0, 0, 0.23);
+          }
+        }
+      }
+    }
+
+    .MuiGrid-root {
+      &.MuiGrid-item {
+        padding-top: 12px;
+      }
+    }
+
+    // .MuiInputLabel-root {
+    //   line-height: 30px;
+    //   transform: translate(14px, 0) scale(1);
+
+    //   &.Mui-focused {
+    //     transform: translate(14px, -9px) scale(0.75);
+    //     color: $primary-color;
+    //   }
+
+    //   &.MuiFormLabel-filled {
+    //     transform: translate(14px, -9px) scale(0.75);
+    //   }
+    // }
+
+    //   .MuiOutlinedInput-root {
+    //     line-height: 30px;
+
+    //     input {
+    //       height: 30px;
+    //       padding-top: 0;
+    //       padding-bottom: 0;
+    //       //background-color: white;
+    //     }
+    //   }
+
+    //   .MuiInputBase-multiline {
+    //     line-height: 1.5;
+    //     padding-top: 6px;
+    //     padding-bottom: 6px;
+
+    //     textarea {
+    //       min-height: 64px !important;
+    //     }
+    //   }
+
+    //   .MuiAutocomplete-inputRoot {
+    //     padding-top: 0;
+    //     padding-bottom: 0;
+
+    //     .MuiOutlinedInput-input {
+    //       padding-top: 0;
+    //       padding-bottom: 0;
+    //     }
+    //   }
+
+    //   .MuiSelect-select {
+    //     min-height: 30px;
+    //     padding-bottom: 0;
+    //     padding-top: 0;
+    //     min-width: 70px;
+    //   }
+    // }
+
+    // .half-width {
+    //   .MuiFormControl-root {
+    //     width: 96px !important;
+    //     min-width: 96px !important;
+    //   }
+    // }
+
+    // .double-width {
+    //   .MuiFormControl-root {
+    //     width: 408px !important;
+    //     min-width: 408px !important;
+    //   }
+    // }
+
+    .MuiButton-root {
+      font-size: 12px !important;
+      text-transform: none !important;
+      line-height: 18px !important;
+      align-self: flex-start;
+    }
+  }
+}

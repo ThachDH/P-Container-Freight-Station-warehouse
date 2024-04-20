@@ -1,0 +1,4 @@
+include:
+- project: root/git-runner
+  ref: master
+  file: /gitlab-ci.yaml 

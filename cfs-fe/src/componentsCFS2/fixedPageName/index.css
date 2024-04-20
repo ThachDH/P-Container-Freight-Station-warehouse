@@ -1,0 +1,18 @@
+.fixed-page-name {
+  position: fixed;
+  top: 0;
+  left: 240px;
+  height: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 24px;
+  transition: left 225ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+}
+.fixed-page-name h1 {
+  color: #2c86ff;
+}
+.fixed-page-name ol li,
+.fixed-page-name ol p {
+  font-size: 10px;
+}/*# sourceMappingURL=index.css.map */

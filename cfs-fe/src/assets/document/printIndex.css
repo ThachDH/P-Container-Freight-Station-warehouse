@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#PrintMe {
+  font-family: "Arial";
+}
+#PrintMe > .s-main {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 50%;
+  padding-top: 35px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 12px;
+}
+#PrintMe > .s-main .unique {
+  font-weight: bold;
+  margin-top: -142px;
+}
+#PrintMe > .s-main .unique .label {
+  font-size: 15px;
+}
+#PrintMe > .s-main .unique .details {
+  height: 98px;
+  font-size: 18px;
+  max-width: 70%;
+}
+#PrintMe > .s-main .unique .smaller-details {
+  font-size: 13px;
+  max-width: 70%;
+}
+#PrintMe > .s-main > .block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: baseline;
+}
+#PrintMe > .s-main > .block .item {
+  flex-grow: 1;
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: row;
+  align-content: baseline;
+  align-items: baseline;
+  justify-content: flex-start;
+  gap: 16px;
+  font-weight: bold;
+}
+#PrintMe > .s-main > .block .item:nth-child(1) {
+  font-size: 15px;
+  flex-basis: 70%;
+}
+#PrintMe > .s-main > .block .item:nth-child(2) {
+  font-size: 18px;
+  flex-basis: 30%;
+}
+#PrintMe > .s-main > .block .item .shipmarks {
+  font-size: 18px;
+}
+
+.QR-code {
+  margin-left: 75%;
+}
+
+@media print {
+  .PrintMe {
+    position: fixed;
+    background: white;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+  }
+}/*# sourceMappingURL=printIndex.css.map */

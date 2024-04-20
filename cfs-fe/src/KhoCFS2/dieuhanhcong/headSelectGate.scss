@@ -1,0 +1,8 @@
+.test__class {
+  transform: translateX(0%);
+  transition: all linear 0.7s;
+
+  &.hide {
+    transform: translateX(-200%);
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "name": "cfs",
+  "version": "0.0.1",
+  "description": "CFS",
+  "keywords": [
+    "loopback-application",
+    "loopback"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "engines": {
+    "node": "12 || 14 || 16 || 17"
+  },
+  "scripts": {
+    "build": "lb-tsc",
+    "build:watch": "lb-tsc --watch",
+    "lint": "npm run eslint && npm run prettier:check",
+    "lint:fix": "npm run eslint:fix && npm run prettier:fix",
+    "prettier:cli": "lb-prettier \"**/*.ts\" \"**/*.js\"",
+    "prettier:check": "npm run prettier:cli -- -l",
+    "prettier:fix": "npm run prettier:cli -- --write",
+    "eslint": "lb-eslint --report-unused-disable-directives .",
+    "eslint:fix": "npm run eslint -- --fix",
+    "pretest": "npm run rebuild",
+    "test": "lb-mocha --allow-console-logs \"dist/__tests__\"",
+    "posttest": "npm run lint",
+    "test:dev": "lb-mocha --allow-console-logs dist/__tests__/**/*.js && npm run posttest",
+    "docker:build": "docker build -t bms .",
+    "docker:run": "docker run -p 3000:3000 -d bms",
+    "premigrate": "npm run build",
+    "migrate": "node ./dist/migrate",
+    "preopenapi-spec": "npm run build",
+    "openapi-spec": "node ./dist/openapi-spec",
+    "prestart": "npm run rebuild",
+    "start": "node -r source-map-support/register .",
+    "clean": "lb-clean dist *.tsbuildinfo .eslintcache",
+    "rebuild": "npm run clean && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "sonhkl@sp-itc.com.vn",
+  "license": "",
+  "files": [
+    "README.md",
+    "dist",
+    "src",
+    "!*/__tests__"
+  ],
+  "dependencies": {
+    "@loopback/authentication": "^9.0.4",
+    "@loopback/authentication-jwt": "^0.12.0",
+    "@loopback/authorization": "^0.12.4",
+    "@loopback/boot": "^5.0.0",
+    "@loopback/core": "^4.0.0",
+    "@loopback/filter": "^3.0.1",
+    "@loopback/repository": "^5.1.2",
+    "@loopback/rest": "^12.0.0",
+    "@loopback/rest-explorer": "^5.0.0",
+    "@loopback/service-proxy": "^5.0.0",
+    "dotenv": "^16.0.0",
+    "html-entities": "^2.3.3",
+    "isemail": "^3.2.0",
+    "loopback-connector-mssql": "^3.8.0",
+    "md5-typescript": "^1.0.5",
+    "moment": "^2.29.3",
+    "tslib": "^2.0.0",
+    "xml2js": "^0.5.0"
+  },
+  "devDependencies": {
+    "@loopback/build": "^9.0.0",
+    "@loopback/eslint-config": "^13.0.0",
+    "@loopback/testlab": "^5.0.0",
+    "@types/node": "^12.20.50",
+    "@types/xml2js": "^0.4.11",
+    "eslint": "^8.14.0",
+    "source-map-support": "^0.5.21",
+    "typescript": "~4.6.4"
+  }
+}

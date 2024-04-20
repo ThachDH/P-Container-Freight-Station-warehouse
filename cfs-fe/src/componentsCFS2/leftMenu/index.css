@@ -1,0 +1,40 @@
+.menu .menu-header {
+  background-color: white;
+  padding-right: 8px !important;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+.menu .menu-header svg {
+  font-size: 24px;
+}
+.menu .MuiBox-root .MuiList-root .background__selected {
+  background-color: #006699;
+}
+.menu .MuiBox-root .MuiList-root .MuiListItemButton-root {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.menu .MuiBox-root .MuiList-root .MuiListItemButton-root.active .MuiTypography-root {
+  font-weight: 600;
+  color: #fff;
+}
+.menu .MuiBox-root .MuiList-root .MuiListItemButton-root:focus,
+.menu .MuiBox-root .MuiList-root .MuiListItemButton-root:hover {
+  background-color: #87CEFA;
+  color: #fff;
+}
+.menu .MuiBox-root .MuiList-root .select__ParentMenu {
+  color: #B0E0E6;
+}
+.menu .scrollBar__ {
+  float: left;
+  overflow-y: scroll;
+}
+.menu .scrollBar__::-webkit-scrollbar {
+  width: 1px;
+  background-color: #0081C9;
+}
+.menu h2 {
+  font-weight: 600;
+  margin-left: 20px;
+  color: #1876d1;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,493 @@
+main .MuiFormControl-root,
+.MuiDialogContent-root .MuiFormControl-root {
+  background-color: white;
+  border-radius: 4px;
+}
+main .MuiFormControl-root.read-only,
+.MuiDialogContent-root .MuiFormControl-root.read-only {
+  background-color: #f5f5f5;
+}
+main .MuiFormControl-root.read-only .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline,
+.MuiDialogContent-root .MuiFormControl-root.read-only .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(0, 0, 0, 0.23);
+}
+main .MuiFormControl-root .MuiGrid-root.MuiGrid-item,
+.MuiDialogContent-root .MuiFormControl-root .MuiGrid-root.MuiGrid-item {
+  padding-top: 12px;
+}
+main .MuiFormControl-root .MuiButton-root,
+.MuiDialogContent-root .MuiFormControl-root .MuiButton-root {
+  font-size: 12px !important;
+  text-transform: none !important;
+  line-height: 18px !important;
+  align-self: flex-start;
+}
+
+.MuiTable-root thead tr th {
+  font-weight: 600;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+  text-transform: capitalize;
+  white-space: nowrap;
+  background-color: #5BC0F8;
+}
+.MuiTable-root thead tr th:first-child {
+  padding-left: 24px;
+}
+.MuiTable-root thead tr th:last-child {
+  padding-right: 24px;
+}
+.MuiTable-root thead tr th.sticky-column {
+  position: sticky;
+  right: 0;
+  background-color: #5BC0F8;
+}
+.MuiTable-root tbody tr {
+  background-color: white;
+}
+.MuiTable-root tbody tr td {
+  white-space: nowrap;
+}
+.MuiTable-root tbody tr td:first-child {
+  padding-left: 24px;
+}
+.MuiTable-root tbody tr td:last-child {
+  padding-right: 24px;
+}
+.MuiTable-root tbody tr td.sticky-column {
+  position: sticky;
+  right: 0;
+  background-color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.MuiTable-root tbody tr td.sticky-column button,
+.MuiTable-root tbody tr td.sticky-column a {
+  color: #bdbdbd;
+}
+.MuiTable-root tbody tr td.sticky-column::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), #e0e0e0);
+  left: -4px;
+}
+.MuiTable-root tbody tr td.status-column .MuiSvgIcon-root {
+  font-size: 20px;
+  vertical-align: middle;
+}
+.MuiTable-root tbody tr td.status-column .MuiSvgIcon-root:not(.MuiSvgIcon-colorSuccess) {
+  color: #bdbdbd;
+}
+.MuiTable-root tbody tr:hover td.sticky-column {
+  background-color: #5BC0F8;
+}
+.MuiTable-root tbody tr:hover td.sticky-column button,
+.MuiTable-root tbody tr:hover td.sticky-column a {
+  color: #2c2c2c;
+}
+.MuiTable-root tbody tr.active td {
+  font-weight: 600;
+  background-color: #f5f5f5;
+}
+.MuiTable-root tbody tr.active td.sticky-column {
+  background-color: #f5f5f5;
+}
+.MuiTable-root tbody tr.row-color--vang {
+  background-color: #fffddd !important;
+}
+.MuiTable-root tbody tr.row-color--vang td.sticky-column {
+  background-color: #fffddd;
+}
+.MuiTable-root tbody tr.row-color--vang:hover td, .MuiTable-root tbody tr.row-color--vang.active td {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.MuiTable-root tbody tr.row-color--vang:hover td.sticky-column, .MuiTable-root tbody tr.row-color--vang.active td.sticky-column {
+  background-color: #f5f3d4;
+}
+.MuiTable-root tbody tr.row-color--do {
+  background-color: #ffbfbf !important;
+}
+.MuiTable-root tbody tr.row-color--do td.sticky-column {
+  background-color: #ffbfbf;
+}
+.MuiTable-root tbody tr.row-color--do:hover td, .MuiTable-root tbody tr.row-color--do.active td {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.MuiTable-root tbody tr.row-color--do:hover td.sticky-column, .MuiTable-root tbody tr.row-color--do.active td.sticky-column {
+  background-color: #f4b7b8;
+}
+.MuiTable-root tbody tr.phieu--mo:hover, .MuiTable-root tbody tr.phieu--mo.active {
+  background-color: #f5f5f5;
+}
+.MuiTable-root tbody tr.phieu--mo:hover td.sticky-column, .MuiTable-root tbody tr.phieu--mo.active td.sticky-column {
+  background-color: #f5f5f5;
+}
+.MuiTable-root tbody tr.phieu--duyet {
+  background-color: #dbdbdb !important;
+}
+.MuiTable-root tbody tr.phieu--duyet td.sticky-column {
+  background-color: #dbdbdb;
+}
+.MuiTable-root tbody tr.phieu--duyet:hover td, .MuiTable-root tbody tr.phieu--duyet.active td {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.MuiTable-root tbody tr.phieu--duyet:hover td.sticky-column, .MuiTable-root tbody tr.phieu--duyet.active td.sticky-column {
+  background-color: #d2d2d2;
+}
+.MuiTable-root tbody tr.phieu--cho-phan-bo {
+  background-color: #e6f8ff !important;
+}
+.MuiTable-root tbody tr.phieu--cho-phan-bo td.sticky-column {
+  background-color: #e6f8ff;
+}
+.MuiTable-root tbody tr.phieu--cho-phan-bo:hover td, .MuiTable-root tbody tr.phieu--cho-phan-bo.active td {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.MuiTable-root tbody tr.phieu--cho-phan-bo:hover td.sticky-column, .MuiTable-root tbody tr.phieu--cho-phan-bo.active td.sticky-column {
+  background-color: #ddedf5;
+}
+.MuiTable-root tbody tr.phieu--hoan-thanh {
+  background-color: #fffddd !important;
+}
+.MuiTable-root tbody tr.phieu--hoan-thanh td.sticky-column {
+  background-color: #fffddd;
+}
+.MuiTable-root tbody tr.phieu--hoan-thanh:hover td, .MuiTable-root tbody tr.phieu--hoan-thanh.active td {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.MuiTable-root tbody tr.phieu--hoan-thanh:hover td.sticky-column, .MuiTable-root tbody tr.phieu--hoan-thanh.active td.sticky-column {
+  background-color: #f5f3d4;
+}
+.MuiTable-root tbody tr.row--o-le {
+  background-color: #fffaf2 !important;
+}
+.MuiTable-root tbody tr.row--o-le td.sticky-column {
+  background-color: #fffaf2;
+}
+.MuiTable-root tbody tr.row--o-le:hover td, .MuiTable-root tbody tr.row--o-le.active td {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.MuiTable-root tbody tr.row--o-le:hover td.sticky-column, .MuiTable-root tbody tr.row--o-le.active td.sticky-column {
+  background-color: #f5f0e9;
+}
+.MuiTable-root tbody tr.row--o-day {
+  background-color: #eafeff !important;
+}
+.MuiTable-root tbody tr.row--o-day td.sticky-column {
+  background-color: #eafeff;
+}
+.MuiTable-root tbody tr.row--o-day:hover td, .MuiTable-root tbody tr.row--o-day.active td {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.MuiTable-root tbody tr.row--o-day:hover td.sticky-column, .MuiTable-root tbody tr.row--o-day.active td.sticky-column {
+  background-color: #d6f4f4;
+}
+.MuiTable-root tbody tr.row--o-canh-bao td {
+  color: red;
+}
+.MuiTable-root .MuiTableCell-root {
+  font-size: 1rem;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.MuiTable-root.select-table tr {
+  cursor: pointer;
+}
+.MuiTable-root.select-table tr td .MuiRadio-root,
+.MuiTable-root.select-table tr td .MuiCheckbox-root,
+.MuiTable-root.select-table tr th .MuiRadio-root,
+.MuiTable-root.select-table tr th .MuiCheckbox-root {
+  padding: 7px;
+}
+.MuiTable-root.select-table tr td .MuiRadio-root .MuiSvgIcon-root,
+.MuiTable-root.select-table tr td .MuiCheckbox-root .MuiSvgIcon-root,
+.MuiTable-root.select-table tr th .MuiRadio-root .MuiSvgIcon-root,
+.MuiTable-root.select-table tr th .MuiCheckbox-root .MuiSvgIcon-root {
+  font-size: 20px;
+}
+
+.display-2-tables .MuiTableContainer-root {
+  min-height: calc((100vh - 48px - 100px - 25px) / 2 - 48px - 46px);
+}
+.display-2-tables > .MuiDivider-root {
+  border: none;
+  padding-top: 2px;
+  background-color: #1876d0;
+}
+.display-2-tables--vertical {
+  margin-bottom: -25px;
+}
+.display-2-tables--vertical .main-container {
+  flex: 1;
+  overflow: auto;
+}
+.display-2-tables--vertical .main-container .MuiTableContainer-root {
+  max-height: calc(100vh - 48px - 100px - 48px - 46px);
+  min-height: calc(100vh - 48px - 100px - 48px - 46px);
+}
+.display-2-tables--vertical > .MuiDivider-root {
+  border: none;
+  padding-left: 2px;
+  background-color: #1876d0;
+}
+
+.MuiDialog-root .MuiDialog-container .MuiDialogTitle-root {
+  background-color: white;
+}
+.MuiDialog-root .MuiDialog-container .MuiDialogContent-root {
+  padding: 12px;
+  background-color: aliceblue;
+}
+.MuiDialog-root .MuiDialog-container .MuiDialogContent-root .search-container {
+  padding: 20px 24px;
+  margin: -20px -24px;
+  background-color: #7dc1d9;
+}
+.MuiDialog-root .MuiDialog-container .MuiDialogContent-root .search-container .MuiFormControl-root {
+  background-color: #ffffe0;
+}
+.MuiDialog-root .MuiDialog-container .MuiDialogContent-root .search-container .MuiFormControl-root .MuiInputLabel-root.Mui-focused, .MuiDialog-root .MuiDialog-container .MuiDialogContent-root .search-container .MuiFormControl-root .MuiInputLabel-root.MuiFormLabel-filled {
+  transform: translate(9px, -5px) scale(0.75);
+  background-color: #ffffe0;
+  padding: 0 8px;
+  border-radius: 4px;
+  line-height: 1.5;
+}
+.MuiDialog-root .MuiDialog-container .MuiDialogContent-root .search-container + .main-content {
+  margin-top: 24px;
+}
+.MuiDialog-root .MuiDialog-container .MuiDialogContent-root .main-content {
+  margin: 0px -24px -20px;
+}
+.MuiDialog-root .MuiDialog-container .MuiDialogContent-root .control-container {
+  padding-left: 0;
+  padding-top: 0;
+  padding-right: 0;
+  margin-bottom: -20px;
+  margin-top: -10px;
+}
+
+.confirm-popup .MuiPaper-root {
+  background-color: white !important;
+}
+.confirm-popup .MuiDialogContent-root {
+  display: flex;
+  align-items: center;
+  padding-bottom: 8px !important;
+}
+.confirm-popup .MuiDialogContent-root h2 {
+  margin-bottom: 4px;
+  background-color: white;
+}
+.confirm-popup .MuiDialogContent-root svg {
+  font-size: 25px;
+  margin-right: 6px;
+}
+
+.MuiTabs-root .MuiTabs-scroller .MuiTabs-flexContainer .MuiButtonBase-root {
+  font-size: 14px;
+  text-transform: none;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.MuiTabPanel-root .main-container {
+  margin-left: -24px;
+  margin-right: -24px;
+  margin-top: -8px;
+}
+
+.MuiPopover-root .MuiPaper-root .MuiTable-root tr td {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.m-filter-title {
+  text-transform: uppercase;
+  margin: 6px 0;
+  color: #000;
+  display: inline-block;
+}
+
+.css-46bh2p-MuiCardContent-root {
+  padding: 12px !important;
+}
+.css-46bh2p-MuiCardContent-root:last-child {
+  padding-bottom: 12px !important;
+}
+
+.MuiDialogTitle-root {
+  text-transform: uppercase;
+}
+
+.MuiCard-root {
+  background-color: #fff;
+}
+
+.MuiDialog-root .MuiCard-root {
+  background-color: #fff !important;
+}
+
+.m-table .MuiDataGrid-columnHeaders {
+  background-color: rgba(134, 229, 255, 0.5);
+}
+
+.super-app-theme--Open {
+  background-color: #A9A9A9;
+}
+
+.css-6hp17o-MuiList-root-MuiMenu-list {
+  max-height: 300px;
+}
+
+.m-secondary.m-btn {
+  color: #63c7ff;
+  border: 1px solid #63c7ff;
+}
+.m-secondary.m-btn:hover {
+  color: #0081C9;
+  border: 1px solid #0081C9;
+}
+
+.b_list {
+  width: 15%;
+  padding-left: 20px;
+  background-color: #E0E0E0;
+}
+
+.b_list_item {
+  color: #1E90FF;
+  font-weight: 600;
+  padding-left: 20px;
+}
+
+.blink-icon {
+  animation: blink 1.5s infinite;
+}
+
+.appear__col {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.m-list ul li.MuiListItem-root {
+  background-color: #86E5FF;
+}
+.m-list ul li.MuiListItem-root .MuiListItemIcon-root {
+  color: "pink";
+}
+.m-list .MuiListItemButton-root:hover {
+  background-color: "orange";
+}
+.m-list .MuiListItemButton-root:hover .MuiListItemIcon-root {
+  color: "yellow";
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c2c2c !important;
+  background-color: rgb(241, 241, 241) !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.menu .MuiPaper-root {
+  background-color: #0081C9;
+  color: #DCDCDC;
+}
+
+.MuiToolbar-root {
+  min-height: 48px !important;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+}
+
+.MuiBox-root.css-0 {
+  padding: 10px 7px;
+}
+
+main {
+  overflow: auto;
+}
+main .search-container {
+  padding: 16px 24px;
+  background-color: rgb(241, 241, 241);
+}
+main .search-container form {
+  display: flex;
+  align-items: flex-start;
+}
+main .search-container form .MuiFormControl-root {
+  width: 150px;
+  min-width: 150px;
+  background-color: #ffffe0;
+}
+main .search-container form .MuiFormControl-root .MuiInputLabel-root.Mui-focused, main .search-container form .MuiFormControl-root .MuiInputLabel-root.MuiFormLabel-filled {
+  transform: translate(9px, -5px) scale(0.75);
+  background-color: #ffffe0;
+  padding: 0 8px;
+  border-radius: 4px;
+  line-height: 1.5;
+}
+main .search-container form .MuiButton-root {
+  white-space: nowrap;
+}
+main .search-container form label.search-label {
+  width: 50px;
+  display: flex;
+  line-height: 30px;
+}
+main .search-container form .MuiCheckbox-root {
+  padding-left: 0;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+main .search-container form .MuiCheckbox-root + .MuiFormControlLabel-label {
+  white-space: nowrap;
+}
+main.menu-hidden .fixed-page-name {
+  padding-left: 0;
+  left: 72px;
+}
+
+.control-container {
+  padding: 8px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.control-container .control-left {
+  display: flex;
+  align-items: center;
+}
+.control-container .control-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.control-container .control-right button {
+  margin-left: 8px;
+}/*# sourceMappingURL=MainLayout.css.map */

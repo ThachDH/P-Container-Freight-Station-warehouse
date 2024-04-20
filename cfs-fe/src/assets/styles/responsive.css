@@ -1,0 +1,6 @@
+/*Tablet*/
+@media (min-Width: 740px) and (max-Width: 1023px) {
+  .chilr-bg {
+    width: 70%;
+  }
+}/*# sourceMappingURL=responsive.css.map */

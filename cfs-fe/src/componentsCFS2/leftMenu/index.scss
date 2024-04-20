@@ -1,0 +1,59 @@
+.menu {
+  .menu-header {
+    background-color: white;
+    padding-right: 8px !important;
+
+    box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+
+    svg {
+      font-size: 24px;
+    }
+  }
+
+  .MuiBox-root {
+    .MuiList-root {
+      .background__selected {
+        background-color: #006699;
+      }
+
+      .MuiListItemButton-root {
+        padding-top: 2px;
+        padding-bottom: 2px;
+        // padding-right: 19px;
+
+        &.active {
+          .MuiTypography-root {
+            font-weight: 600;
+            color: #fff
+          }
+        }
+      }
+
+      .MuiListItemButton-root:focus,
+      .MuiListItemButton-root:hover {
+        background-color: #87CEFA;
+        color: #fff;
+      }
+
+      .select__ParentMenu {
+        color: #B0E0E6;
+      }
+    }
+  }
+
+  .scrollBar__ {
+    float: left;
+    overflow-y: scroll;
+  }
+
+  .scrollBar__::-webkit-scrollbar {
+    width: 1px;
+    background-color: #0081C9;
+  }
+
+  h2 {
+    font-weight: 600;
+    margin-left: 20px;
+    color: #1876d1;
+  }
+}
